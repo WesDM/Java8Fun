@@ -28,12 +28,14 @@ public class Calculator implements Java8Fun {
 	private void lambdaExample() {
 		// Use lamba expression to provide implementation for single abstract
 		// method
+		// This ability to sign a function to a variable is what makes Java 8 functional
 		Formula formula = (a) -> Math.sqrt(a * 100);
 
 		System.out.println(formula.calculate(100)); // 100.0
 		System.out.println(formula.sqrt(16)); // 4.0
 		System.out.println(formula.round(2.5)); // 3.0
-
+		
+		// This ability to pass a function to a method is also what makes Java 8 functional
 		double d = methodWithFunctionalInterfaceParam((a) -> Math.sqrt(a * 100), 100);
 		System.out.println(d); // 100.0
 	}
