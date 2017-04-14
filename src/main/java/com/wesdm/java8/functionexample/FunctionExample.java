@@ -16,6 +16,9 @@ public class FunctionExample {
 		Integer i = times2.apply(2);
 		System.out.println(i);
 		
+		String str = times2String.apply(2);
+		System.out.println(str);
+		
 		//compose executes times2, then squared is executed
 		i = squared.compose(times2).apply(3);
 		System.out.println(i);
