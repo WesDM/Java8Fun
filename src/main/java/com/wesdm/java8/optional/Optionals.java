@@ -2,6 +2,11 @@ package com.wesdm.java8.optional;
 
 import java.util.Optional;
 
+/**
+ * Return an Optional when value returned could be null.
+ * @author Wesley
+ *
+ */
 public class Optionals {
 	 public static void main(String[] args) {
 		 Optional<String> firstName = optTest(1);
