@@ -1,5 +1,6 @@
 package com.wesdm.java8.datetime;
 
+import java.io.IOException;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -14,7 +15,7 @@ import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
 
 public class DateTimeExample {
-	public static void main(String... args) {
+	public static void main(String... args) throws IOException {
 		getTodaysDate();
 		getDayMonthYear();
 		getCertainDate();
@@ -28,7 +29,10 @@ public class DateTimeExample {
 		parseDatePredefined();
 		parseDateCustom();
 		dateToString();
+		
 	}
+	
+	public static void main() {}
 
 	private static LocalDate getTodaysDate() {
 		LocalDate today = LocalDate.now();
